@@ -1,4 +1,8 @@
-<!doctype html><html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>设计事务所赛道 · XCITY AI Competition</title><meta name="description" content="XCITY AI Competition · 设计事务所赛道：资质征集。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,300..500,0..100,0..1&family=Inter:wght@200;300;400;500&display=swap"><style>
+<!doctype html><html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>设计事务所赛道 · XCITY AI Competition</title><meta name="description" content="XCITY AI Competition · 设计事务所赛道：资质征集。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,300..500,0..100,0..1&family=Inter:wght@200;300;400;500&display=swap"><script>(function(){var h=document.documentElement,q=new URLSearchParams(location.search),f=false;
+try{f=window.self!==window.top}catch(e){f=true}
+if(q.get('embed')==='1'||f)h.classList.add('embedded');
+var l=q.get('lang');if(l&&['en','es','zh'].indexOf(l)>-1){try{localStorage.setItem('xcity-lang',l)}catch(e){}}
+})();</script><style>
 :root{
   --ground:#0A0A0B; --ground-2:#0E0E10; --surface:#141416; --surface-2:#1A1A1D;
   --gold:#C9A961; --gold-bright:#E3C77F; --gold-dim:#8A7440;
@@ -682,6 +686,9 @@ footer{border-top:1px solid var(--line);padding:var(--sp-8) 0 var(--sp-9);font-s
   .pb-row{flex-wrap:wrap}.pb-copy{width:100%;border-left:0;border-top:1px solid var(--line);
     padding:var(--sp-3)}}
 
+html.embedded{--gnav-h:0px}
+html.embedded .gnav{display:none}
+
 .pt-list{margin:var(--sp-3) 0 0;padding-left:1.1em;font-size:var(--fs-sm);line-height:1.85;color:var(--body)}
 .pt-list li{margin:0 0 .35em}
 .pt-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--sp-5);margin:0 0 var(--sp-6)}
@@ -713,6 +720,9 @@ footer{border-top:1px solid var(--line);padding:var(--sp-8) 0 var(--sp-9);font-s
   var cur=null; try{cur=localStorage.getItem('xcity-lang')}catch(e){}
   set(cur || 'en');
   sel.addEventListener('change',function(){ set(sel.value) });
+  window.xcitySetLang=set;
+  window.addEventListener('message',function(e){var d=e.data||{};
+    if(d&&d.type==='xcity-lang'&&typeof d.lang==='string') set(d.lang)});
 })();
 (function(){
   var links=[].slice.call(document.querySelectorAll('#anchors a'));
