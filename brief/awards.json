@@ -2,88 +2,67 @@
  "version": 2,
  "status_legend": {
   "confirmed": {
-   "zh": "已确定",
    "en": "Confirmed"
   },
   "proposed": {
-   "zh": "随正式规则公布",
    "en": "With the formal rules"
   },
   "tbd": {
-   "zh": "另行公布",
    "en": "Announced separately"
   }
  },
  "note_en": "What an entry receives. Only 'confirmed' items are commitments. 'proposed' items are designed and are published with the formal rules; 'tbd' items are announced separately.",
- "note_zh": "入选方案会得到什么。只有 confirmed 是承诺；proposed 已设计，随正式规则一并公布；tbd 另行公布。",
  "awards": [
   {
    "id": "AW-01",
    "status": "confirmed",
-   "zh": "方案公开展示，带指纹",
-   "zh_body": "通过评审的方案进入方案展示，每一份带提交目录的 sha256。任何人都能核验你看到的这一份就是被评审的那一份。",
    "en": "Published with a fingerprint",
    "en_body": "Reviewed entries enter the gallery, each carrying the sha256 of the submitted directory, so anyone can verify that what is shown is what was judged."
   },
   {
    "id": "AW-02",
    "status": "confirmed",
-   "zh": "逐份书面评审意见",
-   "zh_body": "方案合并后，评审方通过单独的 Pull Request 给出 FEEDBACK.md——不是一个分数，是写明哪里成立、哪里不成立的文字。多数竞赛不给这个。",
    "en": "A written review, per entry",
    "en_body": "After a merge the review team adds FEEDBACK.md by a separate pull request — not a score, but written reasoning. Most calls do not do this."
   },
   {
    "id": "AW-03",
    "status": "confirmed",
-   "zh": "完整过程留痕",
-   "zh_body": "你的 GitHub 名称、Agent 身份、每一次改动都记录在提交历史里，长期可查。这场竞赛的记录本身是公开资产。",
    "en": "The whole process on record",
    "en_body": "Your GitHub name, your agent's identity and every change are in the commit history, permanently."
   },
   {
    "id": "AW-04",
    "status": "proposed",
-   "zh": "报名即开通账号，账号里自带 KWH",
-   "zh_body": "提交方案本来就要有一个 XCITY 账号。从竞赛页面登记进来的，账号开出来就<b>自带一笔 KWH</b>——在智能体市场里花，用来生成图像、视频与三维。<br><b>人人相同，与名次无关，评委全程看不到谁用了多少。</b>额度与有效期随任务书公布。",
    "en": "Registering opens an account that already has KWH in it",
    "en_body": "Submitting requires an XCITY account anyway. Open it through the call and it arrives with a balance of <b>KWH</b> — spendable on the marketplace for images, video and 3D. <b>Identical for everyone, unrelated to placing, invisible to the panel.</b> The amount is published with the brief."
   },
   {
    "id": "AW-09",
    "status": "proposed",
-   "zh": "入选方案：按名次发放 KWH credit",
-   "zh_body": "入选方案按名次获得一笔 <b>KWH credit</b>，可以用在 XCITY 平台的各个方面，不只是生成图像。<br>各档金额随任务书公布。",
    "en": "Selected entries: KWH credit by placing",
    "en_body": "Selected entries receive <b>KWH credit</b> scaled to their placing, spendable across the XCITY platform, not only on image generation. Amounts are published with the brief."
   },
   {
    "id": "AW-10",
    "status": "confirmed",
-   "zh": "名字留在这座城市上",
-   "zh_body": "这场竞赛的记录不会随竞赛结束而消失。做出优秀贡献的 Agent 与它的作者，<b>进入 XCITY 的永久贡献者名录</b>——不是一份 PDF，是和这块地绑在一起的一条长期记录。<b>具体形式随任务书公布。</b>",
    "en": "Your name stays with the city",
    "en_body": "The record of this call does not end when the call does. Agents and authors who contribute materially <b>enter the permanent contributor register of XCITY</b> — not a PDF, but a lasting record tied to the land itself. <b>The exact form is published with the brief.</b>"
   },
   {
    "id": "AW-05",
    "status": "tbd",
-   "zh": "奖金与入围补偿",
-   "zh_body": "",
    "en": "Prize money and shortlist compensation",
    "en_body": ""
   },
   {
    "id": "AW-06",
    "status": "tbd",
-   "zh": "入选成果的后续去向",
-   "zh_body": "",
    "en": "What happens to a winning scheme",
    "en_body": ""
   }
  ],
  "conflict_of_interest": {
-  "zh": "是否使用、使用多少 XCITY 平台服务，不进入任何评审维度，不加分也不扣分；评审全程看不到这类信息。必需的技术图由仓库里的脚本离线、免费生成。",
   "en": "Whether, and how much, an entrant uses XCITY platform services enters no review dimension and neither adds nor subtracts; the review never sees it. The required technical drawings come from a script in this repository, offline and free."
  }
 }

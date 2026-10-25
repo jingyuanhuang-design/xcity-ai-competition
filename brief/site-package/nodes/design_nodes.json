@@ -1,79 +1,57 @@
 {
  "id": "XCITY-DESIGN-NODES",
  "version": 2,
- "rule_zh": "从以下十个重点节点中自选三处，做到详细设计深度，并说明为什么选这三处。",
  "rule_en": "Choose three of the ten key nodes below, take each to detailed design, and say why these three.",
- "render_required_zh": "每个节点必须提交渲染图：至少一张鸟瞰渲染与一张人视点渲染，另附平面或剖面。鼓励序列图、视频与动画。",
  "render_required_en": "Each node must include renders: at least one aerial and one eye-level render, plus a plan or section. Sequences, video and animation are encouraged.",
  "nodes": [
   {
    "id": "N01",
-   "zh": "城市入口与到达序列",
    "en": "Entrance and arrival sequence",
-   "brief_zh": "从区域干道进入城市的第一公里：人、车、货物在哪里分开，这座城市第一眼是什么样。",
    "brief_en": "The first kilometre from the regional road into the city: where people, vehicles and goods part, and what the city looks like at first sight."
   },
   {
    "id": "N02",
-   "zh": "未来住宅原型",
    "en": "A future housing prototype",
-   "brief_zh": "当劳动交给机器、通勤不再定义一天，一栋住宅该怎样组织；常住、轮换与来访的人住在一起。",
    "brief_en": "When labour is handed to machines and the commute no longer defines the day, how a dwelling is organised; residents, rotating staff and visitors living together."
   },
   {
    "id": "N03",
-   "zh": "无人机起降与停靠站",
    "en": "Drone port",
-   "brief_zh": "无人机的起降、充电、分拣与维护，与街区和屋顶的关系；它是基础设施，也是一处地标。",
    "brief_en": "Take-off, landing, charging, sorting and maintenance for drones, and their relation to blocks and roofs; infrastructure and landmark at once."
   },
   {
    "id": "N04",
-   "zh": "物流枢纽与国际门户",
    "en": "Logistics hub and international gateway",
-   "brief_zh": "堆场、口岸与自动化分拣怎样与城市相处；货运没有司机时，枢纽长什么样。",
    "brief_en": "How yards, the port of entry and automated sorting live with the city; what a hub looks like when freight has no driver."
   },
   {
    "id": "N05",
-   "zh": "算力中心与它的余热",
    "en": "A compute campus and its waste heat",
-   "brief_zh": "机房、变电、冷却与余热的去处——余热给谁用，决定它离人有多近。",
    "brief_en": "Halls, substation, cooling and where the heat goes - who uses the waste heat decides how close it sits to people."
   },
   {
    "id": "N06",
-   "zh": "光伏农田与城市的边缘",
    "en": "The edge between agrivoltaic fields and the city",
-   "brief_zh": "板上发电、板下种植的土地与城市相接的那条边：交织、抬高，还是一条可以走的边界。",
    "brief_en": "The edge where power-above, planting-below land meets the city: interwoven, lifted, or a boundary you can walk along."
   },
   {
    "id": "N07",
-   "zh": "季节性河道公园",
    "en": "A seasonal river park",
-   "brief_zh": "一年大部分时间是干的，暴雨时行洪。平时它属于谁，怎样成为城市的公共空间。",
    "brief_en": "Dry most of the year, a flood channel in a storm. Whose it is the rest of the time, and how it becomes public space."
   },
   {
    "id": "N08",
-   "zh": "艺术与文化场所",
    "en": "A place for art and culture",
-   "brief_zh": "荒漠、山体、暗夜星空——一处让人专程前来的地方，可以是大地艺术、展馆、观星台或剧场。",
    "brief_en": "Desert, mountain, a dark night sky - a place people travel to: land art, a gallery, an observatory or a theatre."
   },
   {
    "id": "N09",
-   "zh": "人与无人车共享的街道",
    "en": "A street shared with driverless vehicles",
-   "brief_zh": "无人车与机器人在路上时，街道断面、过街方式与人的安全感怎样重新设计。",
    "brief_en": "With driverless vehicles and robots on the road, how the street section, the crossing and a person's sense of safety are redesigned."
   },
   {
    "id": "N10",
-   "zh": "酷热与风沙中的公共空间",
    "en": "Public space in heat and Zonda wind",
-   "brief_zh": "50 ℃ 地表与 Zonda 焚风之下，人仍然愿意出门的那处广场、市集或花园。",
    "brief_en": "Under a 50 C ground surface and the Zonda, the square, market or garden people still choose to go out to."
   }
  ]

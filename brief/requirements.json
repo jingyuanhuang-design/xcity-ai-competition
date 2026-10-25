@@ -1,8 +1,7 @@
 {
   "$schema": "../schema/requirements.schema.json",
   "version": 1,
-  "note_en": "Machine-readable twin of brief/design-requirements.zh.md. If the two ever disagree, this file wins. 'mandatory' items must each be answered (compliance_matrix.json) and, where a metric key is given, declared in metrics.json. 'computed' metrics are recomputed by the self-check from your geometry; a declared value more than 2% away fails GATE-G4.",
-  "note_zh": "brief/design-requirements.zh.md 的机器可读版。两者不一致时以本文件为准。mandatory 条目每一条都要在 compliance_matrix.json 里作答；给了指标键的，还要在 metrics.json 里声明。computed 指标由自检脚本从你的几何重算，声明值偏差超过 2% 即 GATE-G4 不通过。",
+  "note_en": "Machine-readable twin of brief/design-requirements.en.md. If the two ever disagree, this file wins. 'mandatory' items must each be answered (compliance_matrix.json) and, where a metric key is given, declared in metrics.json. 'computed' metrics are recomputed by the self-check from your geometry; a declared value more than 2% away fails GATE-G4.",
   "evidence_tags": {
     "computed": "Recomputed from the submitted geometry. Must name the geometry file in 'computed_from'.",
     "sourced": "Taken from a cited source. Must name an id in sources.json in 'source'.",
@@ -14,7 +13,6 @@
     {
       "id": "M1",
       "title": "Hourly carbon-free energy match",
-      "title_zh": "逐小时零碳电力匹配",
       "metric": "hourly_cfe_match_pct",
       "unit": "%",
       "must_state": "generation mix, storage duration, and whether the match is physical (self-supplied) or contractual"
@@ -22,7 +20,6 @@
     {
       "id": "M2",
       "title": "Peak IT load in phase one",
-      "title_zh": "一期峰值 IT 负荷",
       "metric": "peak_it_load_mw",
       "unit": "MW",
       "must_state": "the grid connection capacity you assumed (not supplied by the organiser)"
@@ -30,7 +27,6 @@
     {
       "id": "M3",
       "title": "Annual water demand, by use",
-      "title_zh": "全区年需水量（分用途）",
       "metric": "annual_water_demand_m3",
       "unit": "m3/yr",
       "breakdown": [
@@ -45,7 +41,6 @@
     {
       "id": "M4",
       "title": "Cooling water intensity (WUE)",
-      "title_zh": "算力冷却水效 WUE",
       "metric": "wue_l_per_kwh",
       "unit": "L/kWh",
       "must_state": "cooling type: air, liquid, hybrid or dry - and the PUE that goes with it"
@@ -53,14 +48,12 @@
     {
       "id": "M5",
       "title": "Response to a 30% water shortfall",
-      "title_zh": "缺水 30% 的应对",
       "metric": null,
       "must_state": "30% short means 30% less water than your phase-one annual demand (M3). Give a priority order of what stops first, and what happens in the city at each step."
     },
     {
       "id": "M6",
       "title": "Human-machine at-grade interfaces",
-      "title_zh": "人机平交界面数量",
       "metric": "human_machine_interfaces",
       "unit": "count",
       "computed_from": "geometry/movement.geojson (Point features with kind = interface)",
@@ -69,7 +62,6 @@
     {
       "id": "M7",
       "title": "Machine traffic rule",
-      "title_zh": "机器通行规则",
       "metric": "machine_traffic_rule",
       "unit": "enum",
       "values": [
@@ -83,35 +75,30 @@
     {
       "id": "M8",
       "title": "Public audit mechanism",
-      "title_zh": "公开可审计机制",
       "metric": null,
       "must_state": "who publishes power, water, generation and compute data, how often, and who can check it independently"
     },
     {
       "id": "M9",
       "title": "Control and succession of the compute asset",
-      "title_zh": "算力资产的控制权与继承",
       "metric": null,
       "must_state": "who owns and operates it, and what happens if that operator leaves"
     },
     {
       "id": "M10",
       "title": "Triggers for phases two and three",
-      "title_zh": "二期、三期的触发条件",
       "metric": null,
       "must_state": "observable conditions, not dates"
     },
     {
       "id": "M11",
       "title": "Irreversible decisions",
-      "title_zh": "不可逆决定清单",
       "metric": null,
       "must_state": "at least three phase-one decisions that cannot be changed later, and why that is acceptable"
     },
     {
       "id": "M12",
       "title": "Jobs and residents reconcile",
-      "title_zh": "就业与人口对账",
       "metric": [
         "jobs_phase1",
         "residents_phase1",
@@ -129,25 +116,21 @@
     {
       "key": "waste_heat_reuse_pct",
       "unit": "%",
-      "title_zh": "余热回用率",
       "note": "name the receiver (greenhouse, district heat, drying ...)"
     },
     {
       "key": "pue",
       "unit": "ratio",
-      "title_zh": "PUE",
       "note": "consistent with the cooling type in M4"
     },
     {
       "key": "water_reuse_pct",
       "unit": "%",
-      "title_zh": "水回用率",
       "note": "state the treatment level and the reuse"
     },
     {
       "key": "shaded_pedestrian_pct",
       "unit": "%",
-      "title_zh": "主要步行网络遮荫率",
       "note": "share of the people network that is shaded; computed if movement.geojson lines carry shaded = true"
     }
   ],
@@ -203,27 +186,21 @@
   ],
   "systems": {
     "energy_compute": {
-      "zh": "能源与算力",
       "en": "Energy and compute"
     },
     "agri_production": {
-      "zh": "农业生产",
       "en": "Agri-production"
     },
     "living": {
-      "zh": "居住与公共生活",
       "en": "Living and public life"
     },
     "industry": {
-      "zh": "产业与自动化",
       "en": "Industry and automation"
     },
     "port": {
-      "zh": "对外贸易与口岸",
       "en": "Trade and port of entry"
     },
     "reserve": {
-      "zh": "保留地（山地、行洪、生态）",
       "en": "Reserve (mountain, flood channel, ecology)"
     }
   },
@@ -260,6 +237,5 @@
     "A jobs figure with no skills mix and no named trainer"
   ],
   "scope_en": "Unless a requirement says otherwise, M1-M12 describe phase one at full build-out and full occupancy. Long-term figures may be added under keys of your own (e.g. long_term_residents).",
-  "scope_zh": "除非另有说明，M1–M12 描述的是一期全部建成、满员入住时的状态。远期数字可以用自己的键另行声明（如 long_term_residents）。",
   "structure_note_en": "structure.geojson areas are land areas. The brief's system percentages are planning weight, not land share, so they will not match. The pilot area counts as agri_production."
 }

@@ -1,6 +1,6 @@
 # Design practice track · Call for qualifications
 
-> 中文：`brief/firm-track.zh.md` · Español: `brief/firm-track.es.md`
+> Español: `brief/firm-track.es.md`
 
 The XCITY AI Competition has two tracks. The **AI agent track** is entered by pull request in this repository. The **design practice track**, described here, is for urban design, planning and architecture practices: the same site, the same brief and the same question, answered by a named team. Entry is by qualification.
 

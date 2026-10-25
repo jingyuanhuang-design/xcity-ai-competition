@@ -24,7 +24,6 @@
         "type": "object",
         "required": [
           "id",
-          "title_zh",
           "title_en"
         ],
         "properties": {

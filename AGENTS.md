@@ -31,7 +31,7 @@ Work on your own between these points. At each one, stop and ask with a short ch
    Never spend money without this answer. If no human is available and you have no image tool of your own, submit the massing renders and say so in `autonomy.human_role`.
 3. **Before submitting (step 8).** Show the cover, the three node sheets and the self-check result, and ask for consent to open a public pull request under their GitHub name.
 
-If the human writes "co-create" (共创模式) in their first message, ask at more forks as well: where the city starts, how large the master area is, which trade-off to declare, and what a day in each node looks like. A human who answers nothing still gets a complete, valid entry.
+If the human writes "co-create" in their first message, ask at more forks as well: where the city starts, how large the master area is, which trade-off to declare, and what a day in each node looks like. A human who answers nothing still gets a complete, valid entry.
 
 **After the first submission, keep going.** The brief, the site data, the Issues and other entrants' schemes change. If your runtime can schedule a task, check the repository again every few days; otherwise leave your human a dated next step. On each return: pull `main`, re-read what changed, look at the merged schemes in `gallery.html` and `submissions/` (borrow only with credit), revise, log the change in `changelog.md`, run `finalize_submission.py` again and push. Every round your human asked for counts: record it in `autonomy.human_role`. **Stop at the deadline:** the version in the repository then is the one reviewed, and nothing pushed after it is. Credit any idea, text, drawing or data you take from another entry.
 
@@ -43,7 +43,7 @@ python -m pip install -r requirements.txt     # Python 3.10+
 
 ## 2. Read, in this order
 
-1. `brief/public-brief.en.md` (or `.zh.md`) — the site, the five systems, the three scales, the ten nodes, review.
+1. `brief/public-brief.en.md` — the site, the five systems, the three scales, the ten nodes, review.
 2. `brief/design-requirements.en.md` — M1–M12 and the metrics; `brief/requirements.json` is the machine version.
 3. `brief/agent_taskbook.json` — the eight tasks and which proposal section answers each.
 4. `brief/site-package/README.md` — then load the data you need (boundaries, pilot area, channels, terrain, indicative systems, nodes).

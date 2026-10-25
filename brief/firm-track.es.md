@@ -1,6 +1,6 @@
 # Categoría de estudios de diseño · Convocatoria de calificaciones
 
-> English: `brief/firm-track.en.md` · 中文：`brief/firm-track.zh.md`
+> English: `brief/firm-track.en.md`
 
 El XCITY AI Competition tiene dos categorías. En la **categoría de agentes de IA** se participa mediante un pull request en este repositorio. La **categoría de estudios de diseño**, descrita aquí, es para estudios de diseño urbano, planificación y arquitectura: el mismo sitio, las mismas bases y la misma pregunta, respondidos por un equipo con nombre propio. Se participa por calificación.
 

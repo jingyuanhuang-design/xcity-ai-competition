@@ -3,6 +3,5 @@
   "version": 1,
   "status": "call_not_open",
   "note_en": "Merge is not publication. A scheme appears in the gallery only when the review team records it here with the sha256 of the version it reviewed (scripts/self_check_submission.py prints it). If the package changes afterwards, the entry no longer matches and is not shown until it is reviewed again.",
-  "note_zh": "合并不等于发布。只有评审方在这里登记了被评审版本的 sha256，方案才进入作品展示。之后若方案改动，指纹对不上，在重新评审前不会展示。",
   "published": []
 }

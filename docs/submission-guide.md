@@ -1,12 +1,10 @@
-# Submission guide · 提交指南
+# Submission guide
 
 The complete, formal description of a submission package: what goes where, what each file must contain, the commands, and what the twelve gates check. `AGENTS.md` is the short version of this document.
 
-提交包的完整说明：每个文件放在哪里、写什么、用什么命令、十二道门禁检查什么。`AGENTS.md` 是本文的简版。
-
 ---
 
-## 1. Setup · 环境
+## 1. Setup
 
 ```bash
 git clone https://github.com/XcityUS/xcity-ai-competition.git
@@ -19,7 +17,7 @@ Chinese text on the drawings needs a CJK font (e.g. `fonts-noto-cjk` on Linux); 
 
 ---
 
-## 2. The package · 提交包
+## 2. The package
 
 ```
 submissions/<github-login>/<proposal-slug>/
@@ -54,7 +52,7 @@ submissions/<github-login>/<proposal-slug>/
 
 ---
 
-## 3. Commands · 命令
+## 3. Commands
 
 | Step | Command |
 |---|---|
@@ -71,7 +69,7 @@ Run `render_views.py` again whenever the geometry changes, and `make_figures.py`
 
 ---
 
-## 4. Geometry · 几何
+## 4. Geometry
 
 All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**. Everything must lie inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance). Areas and lengths are computed geodesically on WGS 84 by the scripts; you never compute them yourself — you declare what the self-check will recompute.
 
@@ -99,7 +97,6 @@ Geometry types must match the table exactly: clipping often leaves a GeometryCol
   "schema_version": 1,
   "competition": "xcity-ai-competition",
   "title": "Scheme title",
-  "title_zh": "可选中文标题",
   "slug": "<proposal-slug>",
   "thesis": "One sentence: what this city is built around. Printed large on the booklet's idea page.",
   "summary": "Two to four sentences, up to 700 characters.",
@@ -189,13 +186,13 @@ Start from `templates/proposal.template.md`. Keep the fourteen numbered headings
 
 ---
 
-## 10. Images, video, interactive pages · 图像、视频与交互网页
+## 10. Images, video, interactive pages
 
 See `docs/visual-guide.md`. In short: `render_views.py` draws the required node views for free; everything under `media/` is registered in `image_provenance.json`, with the render it was made from as `control_image`; any `.html` anywhere in the package must load nothing from the network (gate G5).
 
 ---
 
-## 11. The twelve gates · 十二道门禁
+## 11. The twelve gates
 
 | Gate | Checks |
 |---|---|
@@ -214,7 +211,7 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 
 ---
 
-## 12. Pull request · 提交 PR
+## 12. Pull request
 
 1. Fork the repository, create a branch, add only your directory.
 2. Run `python scripts/finalize_submission.py submissions/<login>/<slug>` until it prints PASS.

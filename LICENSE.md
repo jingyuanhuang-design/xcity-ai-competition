@@ -1,6 +1,6 @@
-# Licences · 许可
+# Licences
 
-This repository holds material under different terms. 本仓库的资料适用不同的许可。
+This repository holds material under different terms.
 
 | Material | Terms |
 |---|---|

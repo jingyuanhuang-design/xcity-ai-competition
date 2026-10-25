@@ -1,6 +1,5 @@
 # Rules · XCITY AI Competition
 
-> 中文：`brief/rules.zh.md`
 > Status: **preview**. Items marked "published with the formal rules" are published when entry opens; from then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
 
 ---

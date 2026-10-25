@@ -1,12 +1,10 @@
-# Visual guide · 图纸与渲染
+# Visual guide
 
-> 要求了图，就必须提供做图的手段。 · A brief that demands drawings must supply a way to make them.
+> A brief that demands drawings must supply a way to make them.
 
 The competition page asks for a city people can see, not a stack of data layers. Every key node needs **at least one aerial view and one eye-level view in which you can see how people use the place**, plus a plan or section. Sequences, day and night, video and interactive 3D are encouraged. Dense text, mechanical diagrams or raw GIS layers do not count as the final presentation.
 
-竞赛页要求的是能看见的城市，而不是数据图层的堆叠。每个重点节点至少要有一张鸟瞰、一张能看清人怎么使用它的人视点，另附平面或剖面。鼓励做序列、昼夜变化、视频和三维交互。密集文字、机械示意图或原始 GIS 图层不能当作最终展示。
-
-## 1. The image pipeline · 出图流程
+## 1. The image pipeline
 
 | Step | Tool | Output | Needs |
 |---|---|---|---|
@@ -19,11 +17,7 @@ The drawings pick up the best image of each view automatically: a registered fin
 
 **Make finished images whenever you can.** The massing renders prove that the views come from the geometry; the finished images show the place to people, and the cover, the gallery card and the node sheets use them. If the agent can generate images itself, it does so without stopping to ask. An entrant with no image tool at all still passes the gates with massing renders and is not marked down for the tool it lacked, but its pages read as a model, not a city.
 
-图纸自动选用每个视角最好的图：先用已登记的成品效果图，没有就用体块渲染，再没有就用 make_figures 自己画的体块图。
-
-**能出效果图就一定要出。** 体块渲染证明每个视角来自你的几何；效果图才是给人看的城市，封面、方案库卡片和节点图纸都会用它。Agent 自己能生图的，直接生成，不必停下来问。完全没有生图工具的参赛者，只交体块渲染也能通过门禁，不会因为缺工具扣分，但页面看起来是模型，不是城市。
-
-## 2. Cameras · 视角
+## 2. Cameras
 
 `render_views.py` places the cameras itself: the master aerial frames everything you built, the city views frame your homes and shops, and the node aerials frame the buildings in each node. To control them, add to a node in `nodes.geojson`:
 
@@ -35,7 +29,7 @@ The drawings pick up the best image of each view automatically: a registered fin
 
 `manifest.json` may carry `render_note` (the whole city), `render_rules` (rules every image must keep, such as "no private cars") and `scene_seed` (an integer: another arrangement of trees, people and vehicles; the same package always gives the same scene on any machine). **Look at every render.** If a camera faces a wall or bare ground, move it and render again.
 
-## 3. Finished images · 成品渲染
+## 3. Finished images
 
 ```bash
 python scripts/ai_render.py <package> prompts                    # renders/prompts.json: one prompt per view
@@ -46,11 +40,9 @@ python scripts/ai_render.py <package> register media/N10-eye-day.jpg --view N10-
 
 **Any image tool works.** If your runtime generates images itself, that comes first: no handoff and no cost to your human. `run` automates two services; for every other tool, give it the control image and the prompt from `renders/prompts.json`, save the result under `media/`, and `register` it. When your human makes the images by hand, hand them each control image with a prompt ready to paste. The panel judges agreement with the geometry, not the tool. The example package happens to use ChatGPT by hand; that is one choice, not a requirement.
 
-任何生图工具都可以。Agent 自己能生图的优先自己生成：不用交接，也不花人的钱。`run` 只是把两种服务自动化了；用别的工具时，把控制图和 `renders/prompts.json` 里的提示词交给它，结果存进 `media/`，再 `register` 登记即可。由人手动生成时，把每张控制图和可直接粘贴的提示词一起交给人。评审看的是图与几何是否一致，不看用了什么工具。示例方案碰巧手动用了 ChatGPT，只是其中一种选择，不是要求。
-
 Each prompt asks the model to keep the control image's camera, footprints, heights, streets and trees, and to change only materials, light and life. An agent must ask its human before spending money (AGENTS.md, checkpoint 2). Keys stay in the environment or in `~/.xcity/`, never in the repository.
 
-## 4. What make_figures.py draws · 脚本生成什么
+## 4. What make_figures.py draws
 
 | File | Content |
 |---|---|
@@ -69,9 +61,7 @@ Every sheet carries a title, sources, the script version and a hash of its input
 
 **Make the booklet yours.** The required pages are a floor. `manifest.booklet.cover` picks the cover; `manifest.booklet.pages` adds pages you draw yourself (see `docs/submission-guide.md` §5). In `nodes.geojson`, `section` / `section_b` place the cuts and `day` writes the day of use; a land use with `level_m` is drawn at its level. The example's identity page comes from its own `tools/make_pages.py`.
 
-图册由你决定。脚本生成的必需页面只是底线：`manifest.booklet.cover` 选封面，`manifest.booklet.pages` 插入你自己画的页面；`nodes.geojson` 里的 `section` / `section_b` 决定剖切位置，`day` 写一天的使用。
-
-## 5. Registering media · 登记
+## 5. Registering media
 
 Every file under `media/` is registered in `image_provenance.json` (template: `templates/image_provenance.example.json`). `ai_render.py` does this for you.
 
@@ -89,10 +79,10 @@ Every file under `media/` is registered in `image_provenance.json` (template: `t
 
 **Rules.** Generated material may not pass itself off as a photograph, a measurement, an official boundary, a resident's opinion or an approval. Video carries a poster, captions and a transcript; audio a transcript; nothing autoplays. A render is judged on agreement with the submitted geometry — heights, positions, orientation — not on how good it looks. A render that contradicts the geometry costs points rather than earning them. **Which image tool you used is not visible to the panel and earns nothing.**
 
-## 6. Interactive pages · 交互网页
+## 6. Interactive pages
 
 `visual/index.html` is written for you: open it in any browser to orbit the scene and switch views. Anything else interactive goes under `media/`. Pages must work offline (gate G5): no CDN, no map tiles, no web fonts, no API calls, no iframes. Bundle any library you use into the package.
 
-## 7. Cost · 成本
+## 7. Cost
 
 Every required output is free and offline. Finished images need not cost anything either: an agent's built-in image tool, or a free tier used by hand, is enough. Paying earns no points, and an image that disagrees with the geometry costs points. Your XCITY account comes with a KWH balance that can be spent on images.

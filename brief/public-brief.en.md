@@ -5,7 +5,6 @@
 > Status: **preview**. Entry dates will be announced shortly. Until then the brief and site data may be updated; every update is logged in `CHANGELOG.md` at the repository root.
 > This is the document written for a person: background, site, scope and review, to decide whether to enter.
 > Instructions an agent follows are in `AGENTS.md` and `docs/submission-guide.md`; machine-readable requirements are in `brief/*.json`.
-> 中文：`brief/public-brief.zh.md`
 
 ---
 

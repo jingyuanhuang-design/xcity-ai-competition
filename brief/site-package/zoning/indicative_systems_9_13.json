@@ -2,7 +2,6 @@
  "id": "XCITY-INDICATIVE-SYSTEMS-9-13",
  "version": 1,
  "status": "indicative - a direction, not a land-use boundary",
- "note_zh": "五个城市系统在 9 号与 13 号地块内的意向位置：点是倾向落位，later_phase=true 表示预留、后期建设；halo_km 是大致范围，不是用地边界。只有试点区（lead-zone/）是确定的。方案可以采纳、修改或推翻这些意向，但须说明理由。引用时证据标签用 indicative，不得写成实测或已批准。",
  "note_en": "Indicative positions for the five urban systems inside parcels 9 and 13. A point is where a system leans; later_phase=true means land held for a later phase; halo_km is a rough extent, not a land-use boundary. Only the pilot area (lead-zone/) is fixed. A scheme may adopt, move or overturn any of these, and says why. When you cite them, tag the evidence 'indicative' - never measured or approved.",
  "systems": {
   "compute": {
@@ -17,9 +16,7 @@
     ]
    ],
    "halo_km": 6,
-   "label_zh": "算力 · 中西部台地，近取水与电力",
    "label_en": "Compute · west-central upland, near water and power",
-   "basis_zh": "距主沟道（汇水 ≥1,000 km²）1–5 km、坡度 <3%、高出沟底 >6 m。",
    "basis_en": "1-5 km from a main channel (upstream area >= 1,000 km2), slope < 3%, more than 6 m above the channel bed.",
    "later_phase": false
   },
@@ -47,9 +44,7 @@
     ]
    ],
    "halo_km": 12,
-   "label_zh": "光伏农业 · 铺满大部分平坦地",
    "label_en": "Agrivoltaics · most of the flat ground",
-   "basis_zh": "五个 12 km 光圈覆盖场内约 96% 的平地（坡度 <2%、非洪泛）。",
    "basis_en": "Five 12 km halos cover about 96% of the flat ground on site (slope < 2%, outside the flood-sensitive band).",
    "later_phase": false
   },
@@ -77,9 +72,7 @@
     ]
    ],
    "halo_km": 3,
-   "label_zh": "居住 · 散布全场，每处数千人",
    "label_en": "Living · scattered across the site",
-   "basis_zh": "距一级以上沟道 0.8–4 km（近水）、坡度 <3%、高出沟底 >4 m（避洪），彼此间距 ≥13 km，避开算力、产业与试点区。第五处（-68.10, -31.20）不按上述条件推算：它标的是主办方规划的生活区，位置为近似。",
    "basis_en": "0.8-4 km from a primary channel (near water), slope < 3%, more than 4 m above the channel bed (clear of flood), at least 13 km apart, away from compute, industry and the pilot area. The fifth point (-68.10, -31.20) is not derived from these conditions: it marks the organiser's planned living area, and its position is approximate.",
    "later_phase": false
   },
@@ -91,9 +84,7 @@
     ]
    ],
    "halo_km": 5,
-   "label_zh": "产业 · 门户型在山地东侧、与口岸相邻，后期建设；聚落型随聚落",
    "label_en": "Industry · gateway industry east of the range beside the port, later; settlement industry with each settlement",
-   "basis_zh": "产业指生产、加工与维修，物流指运输、仓储与转运。聚落型产业（农产品加工、光伏与机器人运维、本地制造、场内物流）随各期聚落布置，每一期都有，不画点；门户型产业（出口制造）与对外口岸相邻，位于 9 号地块东翼，山体东侧为背风面，避 Zonda 与西来沙尘。从东翼平地到最近的 RP 510 约 42 km（场地边界最近处约 35.6 km），进场通道须在一期列入工程量。后期建设，一期预留用地。",
    "basis_en": "Industry means making, processing and repair; logistics means moving, storing and transfer. Settlement industry (agricultural processing, solar and robot maintenance, local making, on-site logistics) sits with each phase's settlements and is not drawn as a point. Gateway industry (export manufacturing) sits beside the port of entry on parcel 9's eastern wing, in the lee of the Pie de Palo range. The nearest road, RP 510, is about 42 km from the eastern wing (35.6 km from the nearest point of the site boundary). Built later; its land is held from phase one.",
    "later_phase": true
   },
@@ -105,9 +96,7 @@
     ]
    ],
    "halo_km": 5,
-   "label_zh": "对外口岸 · 山地东侧平地，后期建设",
    "label_en": "Port of entry · flat ground east of the range, later phase",
-   "basis_zh": "对外物流与贸易：货运场站、集装箱堆场、海关监管与保税仓、口岸、自由贸易。位于 9 号地块东翼、Pie de Palo 山地东侧的平地，面向东向内陆与大西洋方向的出口通道，不依赖智利山口；与门户型产业相邻。这一侧成片的平地约 7 km²，口岸与门户型产业共用。场内无既有国道，从东翼平地到最近的 RP 510 约 42 km（场地边界最近处约 35.6 km），进场通道须在一期列入工程量。后期建设，一期预留用地与通道。",
    "basis_en": "Freight terminal, container yard, bonded and customs warehousing, port of entry, free trade. On the flat ground of parcel 9's eastern wing, east of the Pie de Palo range, facing the eastward route inland rather than the Chilean pass. About 7 km2 of continuous flat ground on this side, shared with gateway industry. RP 510 is about 42 km from the eastern wing (35.6 km from the nearest point of the site boundary). Built later; land and access corridor held from phase one.",
    "later_phase": true
   }
@@ -117,13 +106,9 @@
    -67.9599,
    -31.2957
   ],
-  "label_zh": "Pie de Palo 山地",
   "label_en": "Pie de Palo range"
  },
  "data_gaps_en": [
   "Upstream areas count only the 2 x 2 degree DEM window; flows entering from further north are not included, so flood peaks on the main channels need their own check."
- ],
- "data_gaps_zh": [
-  "汇水只计 2°×2° DEM 范围内；北部外来汇水未计入，主沟道洪峰需另行校核。"
  ]
 }

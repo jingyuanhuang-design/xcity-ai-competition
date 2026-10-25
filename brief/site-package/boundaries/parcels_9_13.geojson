@@ -8,7 +8,6 @@
    "properties": {
     "parcel_id": "9",
     "name_en": "Parcel 9",
-    "name_zh": "9 号地块",
     "area_km2": 1483.8,
     "geometry_source": "owner-supplied KML, vertices unmodified",
     "confidence": "exact"
@@ -210,7 +209,6 @@
    "properties": {
     "parcel_id": "13",
     "name_en": "Parcel 13",
-    "name_zh": "13 号地块",
     "area_km2": 172.5,
     "geometry_source": "owner-supplied KML, vertices unmodified",
     "confidence": "exact"

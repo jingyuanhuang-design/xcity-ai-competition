@@ -1,18 +1,11 @@
 {
  "version": 2,
  "note_en": "Situations the review panel will put to every scheme. Not a checklist to fill in: a scheme that has worked out its city will already have an answer to most of them.",
- "note_zh": "评审会拿来追问每一份方案的情境。不是要逐条填写的清单：一份真正想清楚了的方案，对其中大多数自然已经有答案。",
  "scenarios": [
   {
    "id": "sc.01",
    "title": "A 44 degree afternoon",
-   "title_zh": "44 度的下午",
    "prompt": "It is the hottest hour of the year. Where can a person walk, stand and wait outdoors, and what is keeping them alive?",
-   "must_answer_zh": [
-    "遮荫的主要步行网络在总图上画在哪里，遮荫率是多少。",
-    "水在这套遮荫里扮演什么角色，计入水平衡了吗。"
-   ],
-   "why_zh": "荒漠里步行能不能成立，全靠这一条。",
    "must_answer_en": [
     "Where on the plan is the main shaded walking network, and what share of it is shaded?",
     "What part does water play in that shade, and is it in the water balance?"
@@ -22,13 +15,7 @@
   {
    "id": "sc.02",
    "title": "Grid export hour",
-   "title_zh": "余电外送的那一小时",
    "prompt": "Solar is at peak and compute demand is below generation. What does the district do with the surplus?",
-   "must_answer_zh": [
-    "余电去哪里：外送、储存、还是转成算力或制氢。",
-    "这个选择对并网点容量的假设是什么（主办方未提供，须声明）。"
-   ],
-   "why_zh": "余电处理方式直接决定变电与输电走廊的规模，也就决定了城市骨架。",
    "must_answer_en": [
     "Where does the surplus go: export, storage, or conversion into compute or hydrogen?",
     "What does that choice assume about connection capacity (not supplied by the organiser - declare it)?"
@@ -38,14 +25,7 @@
   {
    "id": "sc.03",
    "title": "Grid import hour",
-   "title_zh": "需要买电的那一小时",
    "prompt": "It is 21:00, generation is near zero, compute load is flat. Where does the power come from and what does that cost the carbon claim?",
-   "must_answer_zh": [
-    "这几个小时的电从哪里来：储能？电网进口？降载？",
-    "逐小时零碳匹配率因此是多少——物理自发自用还是合同匹配。",
-    "如果与省级电网断开 72 小时，城市能孤岛运行吗、维持多久、优先保哪些负荷。"
-   ],
-   "why_zh": "日间光伏谁都做得到。这份任务书真正考的是夜间。",
    "must_answer_en": [
     "Where does power come from in these hours: storage, grid import, or load reduction?",
     "What is the hourly carbon-free match as a result - physical self-supply or contractual matching?",
@@ -56,14 +36,7 @@
   {
    "id": "sc.04",
    "title": "Water is 30% short",
-   "title_zh": "水少了 30%",
    "prompt": "The assumed allocation does not arrive. What is curtailed first, and who decides?",
-   "must_answer_zh": [
-    "哪一类用水先停：算力冷却？农业？绿化？生活？给出优先级顺序。",
-    "每一级停下来之后城市里发生什么——哪些活动停止、多少人受影响。",
-    "算力负荷是否随之下调，合同上做得到吗。"
-   ],
-   "why_zh": "这一条最能区分认真方案和渲染图。绕开它的方案在 D2 上拿不到分。",
    "must_answer_en": [
     "Which use stops first: compute cooling, agriculture, landscape, domestic? Give the order.",
     "What happens in the city after each step - what stops, how many people are affected?",
@@ -74,13 +47,7 @@
   {
    "id": "sc.05",
    "title": "A delivery robot and a child",
-   "title_zh": "配送机器人与一个孩子",
    "prompt": "They meet on the same surface. What has been designed so that this is unremarkable?",
-   "must_answer_zh": [
-    "分离、混行还是分时——在这个位置用哪一种，怎么落实。",
-    "全区有多少个这样的人机平交界面。"
-   ],
-   "why_zh": "现行规范里没有答案。方案必须自己表态。",
    "must_answer_en": [
     "Separated, mixed or time-shared - which applies here, and how is it enforced?",
     "How many such at-grade human-machine interfaces are there in the scheme?"
@@ -90,13 +57,7 @@
   {
    "id": "sc.06",
    "title": "Night shift ends",
-   "title_zh": "夜班下班",
    "prompt": "A worker leaves a facility at 03:00. What is open, lit, and safe between there and home?",
-   "must_answer_zh": [
-    "凌晨三点，从设施到家这一路上什么是开着的、亮着的、安全的。",
-    "夜间照明策略与光污染控制怎么同时成立。"
-   ],
-   "why_zh": "一座只在白天成立的城市不是城市，是园区。",
    "must_answer_en": [
     "At 3 a.m., what is open, lit and safe between the facility and home?",
     "How do night lighting and light-pollution control both hold?"
@@ -106,14 +67,7 @@
   {
    "id": "sc.07",
    "title": "Dust event",
-   "title_zh": "沙尘天（Zonda）",
    "prompt": "A wind event puts dust in the air for two days. What happens to cooling, to solar yield, and to public space?",
-   "must_answer_zh": [
-    "室外公共空间在这段时间还能用吗，人去哪里。",
-    "光伏积尘造成的出力下降与清洗用水，计入水平衡了吗。",
-    "空冷进风口的沙尘防护，以及街道断面与朝向对风沙的姿态：挡、导，还是让开。"
-   ],
-   "why_zh": "Zonda 同时打击发电、用水和室外生活三件事。分开答会漏。",
    "must_answer_en": [
     "Can outdoor public space still be used during the event, and where do people go?",
     "Are soiling losses and cleaning water in the water balance?",
@@ -124,14 +78,7 @@
   {
    "id": "sc.08",
    "title": "The anchor tenant leaves",
-   "title_zh": "主力租户撤走",
    "prompt": "The compute operator exits in year eight. What of phase one survives, and what was designed to be convertible?",
-   "must_answer_zh": [
-    "算力资产归谁、由谁接手、合同上怎么约定。",
-    "依赖算力就业的人口如何过渡。",
-    "一期哪些建筑是按可改造设计的。"
-   ],
-   "why_zh": "一座经济命脉是单一资产的城市，必须回答这个问题。不答等于把风险留给居民。",
    "must_answer_en": [
     "Who owns the compute asset, who takes it over, and what do the contracts say?",
     "How does the population that depends on compute jobs make the transition?",
@@ -142,13 +89,7 @@
   {
    "id": "sc.09",
    "title": "A resident asks a question",
-   "title_zh": "一位居民提问",
    "prompt": "Someone wants to know how much water the district used last month. What do they do, and what do they get?",
-   "must_answer_zh": [
-    "她想知道上个月全区用了多少水。她去哪里问，拿到什么。",
-    "谁负责公布、多久一次、谁能独立核查。"
-   ],
-   "why_zh": "公开可审计不是一句承诺，是一个有地址、有频率、有责任人的机制。",
    "must_answer_en": [
     "She wants to know how much water the city used last month. Where does she ask, and what does she get?",
     "Who publishes it, how often, and who can check it independently?"
@@ -158,13 +99,7 @@
   {
    "id": "sc.10",
    "title": "First 500 people",
-   "title_zh": "最早的 500 人",
    "prompt": "Phase one opens. Who are the first 500 people here all day, and what is their day like?",
-   "must_answer_zh": [
-    "这 500 人是谁，做什么工作，一天怎么过。",
-    "开城第一天的岗位数与常住人口数对得上吗。"
-   ],
-   "why_zh": "第一天不成立的城市，第一万天也不会成立。",
    "must_answer_en": [
     "Who are these 500 people, what do they do, and what is their day like?",
     "Do day-one jobs and residents reconcile?"
@@ -174,13 +109,7 @@
   {
    "id": "sc.11",
    "title": "Construction year three",
-   "title_zh": "施工第三年",
    "prompt": "Half the parcel is a building site. What does the finished half feel like to be in?",
-   "must_answer_zh": [
-    "半个地块是工地时，建成的那一半待着是什么感觉。",
-    "施工交通与已入住区域的关系。"
-   ],
-   "why_zh": "分期不是画三张图，是三年里每一年都得能住人。",
    "must_answer_en": [
     "With half the site under construction, what is it like to be in the finished half?",
     "How does construction traffic relate to the occupied areas?"
@@ -190,13 +119,7 @@
   {
    "id": "sc.12",
    "title": "Phase two is triggered",
-   "title_zh": "二期被触发",
    "prompt": "The conditions are met. What in phase one has to change, and what was left open to allow it?",
-   "must_answer_zh": [
-    "触发条件是什么——人口？入住率？电网？水？必须可观测。",
-    "一期哪些决定此时已经无法更改，为什么可以接受。"
-   ],
-   "why_zh": "一期是一座城市的第一块，不是一个独立项目。不可逆的决定在这里暴露。",
    "must_answer_en": [
     "What is the trigger - population, occupancy, grid, water? It must be observable.",
     "Which phase-one decisions can no longer be changed at this point, and why is that acceptable?"
@@ -206,14 +129,7 @@
   {
    "id": "sc.13",
    "title": "Flash flood in a dry wash",
-   "title_zh": "干河床行洪",
    "prompt": "An upstream storm puts flood flow down the dry washes on the alluvial fan within tens of minutes. What is in its path?",
-   "must_answer_zh": [
-    "行洪通道在总图上标在哪里，宽度依据是什么。",
-    "哪些道路、管线、变电设施跨越行洪通道，怎么处理。",
-    "确认没有永久建设落在干河床上。"
-   ],
-   "why_zh": "这是外来方案最容易忽略的一条。把干河床当成平地的方案，D1 直接低分。",
    "must_answer_en": [
     "Where are the flood corridors on the plan, and what is the basis for their width?",
     "Which roads, pipes and substations cross a flood corridor, and how?",
@@ -224,14 +140,7 @@
   {
    "id": "sc.14",
    "title": "The day after a design-level earthquake",
-   "title_zh": "设防地震之后的第二天",
    "prompt": "A design-level earthquake. Structures stand, but power, water and communications are down. What happens next?",
-   "must_answer_zh": [
-    "人去哪里：避难空间在总图上的位置与容量。",
-    "算力设施的失效模式：停机、降载，还是孤岛运行。",
-    "哪条生命线最先恢复，依据什么。"
-   ],
-   "why_zh": "圣胡安是阿根廷地震活动最强的省份之一。抗震不能只写在结构章节里。",
    "must_answer_en": [
     "Where do people go: the location and capacity of refuge space on the plan.",
     "How does compute fail: shutdown, reduced load, or islanded operation?",

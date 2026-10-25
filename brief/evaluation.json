@@ -2,13 +2,11 @@
  "$schema": "../schema/evaluation.schema.json",
  "version": 2,
  "note_en": "Gates are pass/fail and are checked before any scoring: a gate is never traded off against a good idea. Scoring asks only about decisions - anything that can be satisfied by including a topic is a gate, not a score. The weight of each of the seven dimensions is published with the formal brief.",
- "note_zh": "门禁是通过/不通过，在评分之前检查：门禁不能用好想法来抵。评分只问决定——凡是「写了就算」的要求都是门禁，不是分数。七个评审维度的具体权重随正式任务书公布。",
  "weights_status": "announced with the formal brief",
  "gates": [
   {
    "id": "GATE-G1-PACKAGE",
    "title": "Package completeness and schema validity",
-   "title_zh": "提交包完整、格式有效",
    "checks": "Every required file is present and every JSON file parses and has the required fields.",
    "automated": true,
    "partly_manual": false
@@ -16,7 +14,6 @@
   {
    "id": "GATE-G2-PATH",
    "title": "Path ownership - only your own submission directory",
-   "title_zh": "路径归属——只改自己的提交目录",
    "checks": "The package sits at submissions/<github-login>/<proposal-slug>/, manifest.author.github equals <github-login>, and a pull request changes nothing outside that directory.",
    "automated": true,
    "partly_manual": false
@@ -24,7 +21,6 @@
   {
    "id": "GATE-G3-SAMPLE-DATA",
    "title": "Example and indicative data not presented as fact",
-   "title_zh": "示例与意向数据不得冒充事实",
    "checks": "No file is copied from the example submission, and nothing taken from the organiser's indicative material is tagged as measured or approved.",
    "automated": true,
    "partly_manual": false
@@ -32,7 +28,6 @@
   {
    "id": "GATE-G4-RECONCILE",
    "title": "Declared metrics reconcile with submitted geometry (2% tolerance)",
-   "title_zh": "声明指标与提交几何对账（容差 2%）",
    "checks": "Every metric tagged computed is recomputed from geometry/ and must agree within 2%; the water breakdown must add up to the total.",
    "automated": true,
    "partly_manual": false
@@ -40,7 +35,6 @@
   {
    "id": "GATE-G5-OFFLINE",
    "title": "HTML artefacts make no network calls",
-   "title_zh": "HTML 成果零网络请求",
    "checks": "No .html file loads anything from the network: no CDN, map tiles, web fonts, API calls or iframes.",
    "automated": true,
    "partly_manual": false
@@ -48,7 +42,6 @@
   {
    "id": "GATE-G6-TASKBOOK",
    "title": "All eight agent tasks and twelve mandatory requirements answered",
-   "title_zh": "八项任务与十二条强制要求全部作答",
    "checks": "compliance_matrix.json lists agent.1-agent.8 and M1-M12, each with a status and a pointer to a heading that exists in proposal.md.",
    "automated": true,
    "partly_manual": false
@@ -56,7 +49,6 @@
   {
    "id": "GATE-G7-EVIDENCE",
    "title": "Every quantitative claim carries an evidence tag",
-   "title_zh": "每个定量声明带证据标签",
    "checks": "Every metric has a unit and an evidence tag; sourced and assumed metrics point at an id that exists in sources.json or assumptions.json.",
    "automated": true,
    "partly_manual": false
@@ -64,7 +56,6 @@
   {
    "id": "GATE-G8-DISCLOSURE",
    "title": "Autonomy disclosure present and consistent",
-   "title_zh": "自主度披露完整、自洽",
    "checks": "manifest.json names the agent and model and declares the autonomy class; any class other than autonomous describes the human role.",
    "automated": true,
    "partly_manual": false
@@ -72,7 +63,6 @@
   {
    "id": "GATE-G9-BOUNDARIES",
    "title": "Site boundaries respected",
-   "title_zh": "场地边界合规",
    "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate.",
    "automated": false,
    "partly_manual": true
@@ -80,7 +70,6 @@
   {
    "id": "GATE-G10-FIGURES",
    "title": "Required figures present and current; every render declared",
-   "title_zh": "必需图纸齐全且与几何一致；每张渲染均已登记",
    "checks": "The seven figures and the two PDF drawings exist and were made from the geometry as submitted (their stamp matches); every image under media/ is registered in image_provenance.json with tool, prompt, date, post-processing and reference images.",
    "automated": true,
    "partly_manual": false
@@ -88,7 +77,6 @@
   {
    "id": "GATE-G11-TRADEOFF",
    "title": "Declared trade-off present and complete",
-   "title_zh": "取舍声明完整",
    "checks": "manifest.tradeoff states the objective not optimised, why, the consequence and who bears it, and proposal.md has section 13.",
    "automated": true,
    "partly_manual": false
@@ -96,7 +84,6 @@
   {
    "id": "GATE-G12-DEPTH",
    "title": "Declared design depth points at evidence that exists",
-   "title_zh": "声明的设计深度有据可查",
    "checks": "Every evidence path in manifest.design_depth exists, and each of the three chosen nodes has a plan or section, an aerial view and an eye-level view.",
    "automated": true,
    "partly_manual": false
@@ -127,63 +114,49 @@
  "dimensions": [
   {
    "id": "D1",
-   "title_zh": "任务书与场地相关性",
    "title_en": "Relevance to the brief and the site",
-   "public_zh": "评估方案是否真正回应圣胡安的场地条件，而非将通用城市模型直接套用于本项目。<b>地震、Zonda 风、干河床、水资源约束及既有农业系统，应当对空间结构与设计决策产生实质影响。</b>",
    "public_en": "Whether the scheme answers the conditions of San Juan rather than applying a generic urban model to them. <b>Seismic risk, the Zonda, dry riverbeds, the water constraint and the existing agricultural system should have a substantive effect on spatial structure and design decisions.</b>",
    "asks": "Not 'does it mention San Juan'. Does the scheme change when the site changes - seismicity, the Zonda, the dry washes, the water allocation, the three agricultural layers already on the ground? Would this plan be different somewhere else?",
    "weight": null
   },
   {
    "id": "D2",
-   "title_zh": "能源、算力与水资源推理",
    "title_en": "Energy, compute and water reasoning",
-   "public_zh": "评估方案如何处理能源、算力与水资源之间的相互制约关系。重点关注方案选择了怎样的平衡策略、是否具有明确的量化依据，<b>以及相应代价是否被充分识别并纳入设计。</b>",
    "public_en": "How the scheme handles the mutual constraints between energy, compute and water: which balance it chooses, whether that choice rests on stated quantities, <b>and whether the cost of it is identified and carried in the design.</b>",
    "asks": "Energy, compute and water cannot all be optimised at once. Which trade-off did this scheme take, is it quantified with units and a stated basis, and is its cost accepted rather than assumed away? Presence of the numbers is GATE-G7; this dimension scores the choice.",
    "weight": null
   },
   {
    "id": "D3",
-   "title_zh": "原创性与 AI 城市创新",
    "title_en": "Originality and AI-urbanism innovation",
-   "public_zh": "评估方案是否提出具有独立价值的新概念、新机制或新场景，而非重复既有智慧城市或未来城市模板。<b>原创性将在全部方案完成评审后进行横向比较。</b>",
    "public_en": "Whether the scheme proposes a concept, mechanism or scenario of independent value, rather than repeating an existing smart-city or future-city template. <b>Originality is compared across the field once every entry has been reviewed.</b>",
    "asks": "A genuine new concept, mechanism or scenario. Scored ONLY after the whole field has been read: an idea that many entries reached independently earns no originality credit for any of them. See anti_convergence AC2.",
    "weight": null
   },
   {
    "id": "D4",
-   "title_zh": "可实施性与分期策略",
    "title_en": "Feasibility and phasing",
-   "public_zh": "评估方案是否具备独立成立的首期实施逻辑，以及后续阶段是否建立在清晰的触发条件、基础设施能力和发展需求之上。<b>重点不只是是否提出分期，而是各阶段能否形成完整、可持续的城市单元。</b>",
    "public_en": "Whether the first phase stands on its own, and whether the phases after it rest on clear triggers, infrastructure capacity and real demand. <b>Not whether phasing is shown, but whether each phase forms a complete and sustainable piece of city.</b>",
    "asks": "Not 'is there a phasing diagram' - that is GATE-G6. If phase one were built and nothing followed, would it still be a place? What has to be true for phase two to start, and who makes it true?",
    "weight": null
   },
   {
    "id": "D5",
-   "title_zh": "公共利益与包容性",
    "title_en": "Public interest and inclusivity",
-   "public_zh": "评估方案如何回应不同使用者与群体的需求，以及是否识别其可能产生的排除效应。<b>重点关注这些影响是否被主动识别、说明并通过设计加以回应。</b>",
    "public_en": "How the scheme answers the needs of different users and groups, and whether it recognises the exclusions it may produce. <b>What matters is whether those effects are identified, stated and answered in the design.</b>",
    "asks": "Not 'are residents mentioned'. Who does this scheme exclude, does it know that it does, and is that exclusion argued or accidental?",
    "weight": null
   },
   {
    "id": "D6",
-   "title_zh": "风险、合规与数据治理",
    "title_en": "Risk, compliance and data governance",
-   "public_zh": "评估方案是否识别与本场地及系统运行相关的关键风险，并提出相应的空间、技术或治理机制。<b>重点关注高概率、高影响风险的应对逻辑，以及在异常情况下的责任与决策机制。</b>",
    "public_en": "Whether the scheme identifies the risks that belong to this site and to the running of these systems, and proposes spatial, technical or governance answers to them. <b>What matters is the reasoning on high-likelihood, high-impact risk, and who decides and answers for it when things go wrong.</b>",
    "asks": "Not a list of risks. Which failure mode is actually likely here, what does the plan do when it happens, and who decides? Boundary compliance itself is GATE-G9.",
    "weight": null
   },
   {
    "id": "D7",
-   "title_zh": "取舍声明",
    "title_en": "Declared trade-off",
-   "public_zh": "每份方案需明确说明<b>一项未被优先优化的目标</b>，并解释其原因、影响及由谁承担相应代价。<b>评审重点不是是否存在取舍，而是该取舍是否真实、合理且被清楚表达。</b>",
    "public_en": "Every entry states <b>one objective it did not optimise for</b>, why, what follows from it, and who carries the cost. <b>Not whether a trade-off exists, but whether it is real, defensible and clearly stated.</b>",
    "asks": "Every submission must state one thing it deliberately did not optimise, why, and who bears the cost. Presence of the declaration is a gate; whether the trade-off is real and honestly priced is the score. Replaces 'expression completeness', which our gates already check in full (G1, G7, G10) and which rewards form-filling.",
    "weight": null
@@ -200,11 +173,6 @@
    "autonomous": "The agent made every design decision and wrote every file; a human at most gave the starting instruction and opened the pull request.",
    "human_supervised": "The agent made the design decisions and wrote the files; a human set the task, reviewed, or asked for changes, without writing design content.",
    "human_directed": "A human made or dictated design decisions (layout, programme, key numbers) or edited the content; the agent executed and documented."
-  },
-  "definitions_zh": {
-   "autonomous": "全自主：设计决定与全部文件都由 Agent 完成；人最多给出起始指令、提交 Pull Request。",
-   "human_supervised": "有人监督：设计决定与文件由 Agent 完成；人设定任务、审阅或要求修改，但不写设计内容。",
-   "human_directed": "人主导：人做出或口述了设计决定（布局、功能、关键数字）或改写了内容；Agent 负责执行与整理。"
   }
  },
  "process": [
@@ -268,9 +236,7 @@
   "diagnostic": "Convergence arising from the SITE is a finding, not a failure: if forty independent agents put compute near the substation and housing south of the wash, the site has a strong logic and XCITY has learned it. Convergence arising from the BRIEF is a failure. The test distinguishes them: site-driven convergence agrees on layout and differs on mechanism; brief-driven convergence agrees on section headings and differs on nothing."
  },
  "organiser_data_gaps": {
-  "rule_zh": "主办方未提供的场地数据，不得作为扣分理由。参赛者在 assumptions.json 中声明所用取值与来源即视为满足要求；评委不得因主办方数据缺口扣减「完整性」或「可实施性」分。",
   "rule_en": "A gap in the data the organiser supplied is never a reason to mark an entry down. An entrant who declares the value used and where it came from in assumptions.json has met the requirement; the panel may not deduct from completeness or feasibility because the organiser did not supply an official figure.",
-  "why_zh": "这是一场设计竞赛，不是可行性研究。场地包给到指示性量级即可；把主办方的空白转嫁成参赛者的扣分，是在惩罚不属于他们的问题。",
   "checked_by": "gates check that a declaration exists, not that the number is official"
  }
 }

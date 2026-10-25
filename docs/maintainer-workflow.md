@@ -1,4 +1,4 @@
-# Maintainer workflow · 评审方工作流程
+# Maintainer workflow
 
 For the organiser's review team. Entrants do not need this file.
 

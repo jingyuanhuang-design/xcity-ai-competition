@@ -2,7 +2,6 @@
  "id": "XCITY-TERRAIN-SUMMARY-9-13",
  "source": "SRC-DEM",
  "method_en": "Copernicus DEM GLO-30 resampled to 60 m (EPSG:32719). Slope from the elevation gradient, smoothed over 5 x 5 cells (300 m). Flood-sensitive = within 1.5 km of a channel with >= 100 km2 upstream area and less than 3 m above the nearest channel bed (HAND). Raster cells are counted inside the site boundary; areas are indicative to about 1%.",
- "method_zh": "Copernicus DEM GLO-30 重采样到 60 m（EPSG:32719）。坡度取高程梯度并做 5×5 格（300 m）平滑。洪泛敏感带 = 距汇水 ≥100 km² 沟道 1.5 km 内、且高出最近沟底（HAND）不足 3 m。按场地边界内栅格计数，面积精度约 1%。",
  "site_km2": 1655.3,
  "slope_km2": {
   "lt_2pct": 1183.3,

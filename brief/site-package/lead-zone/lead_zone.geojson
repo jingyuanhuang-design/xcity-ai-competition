@@ -7,7 +7,6 @@
    "properties": {
     "id": "LZ-01",
     "name_en": "Pilot area field 01",
-    "name_zh": "试点区 01",
     "arrays": 1000,
     "array_area_km2": 4.0,
     "outline_km2": 4.64,
@@ -130,7 +129,6 @@
    "properties": {
     "id": "LZ-02",
     "name_en": "Pilot area field 02",
-    "name_zh": "试点区 02",
     "arrays": 1000,
     "array_area_km2": 4.0,
     "outline_km2": 4.66,
@@ -185,7 +183,6 @@
    "properties": {
     "id": "LZ-03",
     "name_en": "Pilot area field 03",
-    "name_zh": "试点区 03",
     "arrays": 1000,
     "array_area_km2": 4.0,
     "outline_km2": 4.67,

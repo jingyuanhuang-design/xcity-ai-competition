@@ -1,7 +1,6 @@
 # Design requirements · XCITY AI Competition
 
 > Machine-readable version: `brief/requirements.json`. If the two disagree, the JSON wins.
-> 中文：`brief/design-requirements.zh.md`
 
 ---
 

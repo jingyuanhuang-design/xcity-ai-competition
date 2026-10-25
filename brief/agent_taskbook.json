@@ -4,29 +4,21 @@
   "competition": "XCITY AI Competition",
   "site": "Parcels 9 and 13, San Juan, Argentina - 1,656 km2",
   "note_en": "All eight tasks are mandatory. Each must appear in compliance_matrix.json with a status and a pointer to the section of proposal.md that answers it (the 'answers_in' heading number).",
-  "note_zh": "八项任务全部必答。每一项都要出现在 compliance_matrix.json 中，写明状态，并指向 proposal.md 中回答它的那一节（answers_in 给出的标题编号）。",
   "tasks": [
     {
       "id": "agent.1",
       "title": "Identity of the place",
-      "title_zh": "这座城市的身份",
       "required": true,
       "expects": [
         "A naming system for the city, its settlements and its districts",
         "Logo direction - described and shown, not necessarily finished artwork",
         "A visual standard: typography, colour, signage logic"
       ],
-      "expects_zh": [
-        "城市、聚落与片区的命名体系",
-        "标志方向——描述并示意即可，不要求完成稿",
-        "视觉标准：字体、色彩、标识逻辑"
-      ],
       "answers_in": "## 1."
     },
     {
       "id": "agent.2",
       "title": "Energy and compute",
-      "title_zh": "能源与算力",
       "required": true,
       "expects": [
         "Siting logic for compute load relative to generation, water and inhabited fabric",
@@ -35,19 +27,11 @@
         "Grid posture: import, export, islanding - with the capacity you assumed",
         "Every figure tagged with its evidence basis"
       ],
-      "expects_zh": [
-        "算力负荷相对发电、水源与居住的选址逻辑",
-        "逐小时零碳电力匹配的方法，写成方法而不是口号",
-        "余热去哪里、谁接收、用来做什么",
-        "与电网的关系：进口、外送、孤岛运行——以及你假设的容量",
-        "每个数字都带证据标签"
-      ],
       "answers_in": "## 3."
     },
     {
       "id": "agent.3",
       "title": "Water in a dry place",
-      "title_zh": "旱地上的水",
       "required": true,
       "expects": [
         "A water balance: sources in, uses, losses, returns",
@@ -56,19 +40,11 @@
         "Landscape water logic - what is irrigated, with what, and what is not",
         "What is curtailed first if water is 30% short, and what happens in the city as a result"
       ],
-      "expects_zh": [
-        "水平衡：来源、用途、损耗、回流",
-        "算力冷却耗水强度，带单位与冷却方式",
-        "回用回路：灰水、黑水、冷凝水、浓盐水",
-        "景观用水逻辑——哪些灌溉、用什么水、哪些不灌",
-        "可用水减少 30% 时先停什么，以及城市里因此发生什么"
-      ],
       "answers_in": "## 4."
     },
     {
       "id": "agent.4",
       "title": "Human and machine",
-      "title_zh": "人与机器",
       "required": true,
       "expects": [
         "Two movement networks: people, and machines plus goods",
@@ -76,18 +52,11 @@
         "What machines are allowed where, and who decides: separated, mixed or time-shared",
         "Kerb, loading, charging and storage logic"
       ],
-      "expects_zh": [
-        "两张通行网络：人；机器与货物",
-        "两者在同一平面相遇的每一个界面——定位、计数，以及如何保证安全",
-        "机器在哪里可以通行、由谁决定：分离、混行还是分时",
-        "路缘、装卸、充电与存放的逻辑"
-      ],
       "answers_in": "## 5."
     },
     {
       "id": "agent.5",
       "title": "Programme and production",
-      "title_zh": "功能与产业",
       "required": true,
       "expects": [
         "Programme mix by use and approximate share",
@@ -95,18 +64,11 @@
         "Phase one: who is actually here, and do jobs and residents reconcile",
         "What is produced on site, and for whom - including what the agrivoltaic fields produce"
       ],
-      "expects_zh": [
-        "按用途的功能配比与大致比例",
-        "岗位类型与数量，写明依据，分期给出",
-        "一期：谁真的在这里，岗位数与常住人口对得上吗",
-        "场内生产什么、卖给谁——包括光伏农田产出什么"
-      ],
       "answers_in": "## 6."
     },
     {
       "id": "agent.6",
       "title": "Urban form across parcels 9 and 13",
-      "title_zh": "9 号与 13 号地块的城市形态",
       "required": true,
       "expects": [
         "The structure of the whole site: where the five systems sit and why",
@@ -114,18 +76,11 @@
         "Public realm under desert conditions: shade, wind, water, ground surface",
         "How the scheme uses the two parcels - parcel 9 with the Pie de Palo range and its eastern wing, parcel 13 with the pilot area"
       ],
-      "expects_zh": [
-        "整片场地的结构：五个系统落在哪里，为什么",
-        "你自己划定的总体设计范围：为什么在那里，街区结构、体量与密度",
-        "荒漠条件下的公共空间：遮荫、风、水、地面",
-        "方案如何使用两块地——带着 Pie de Palo 山地与东翼的 9 号地块，和有试点区的 13 号地块"
-      ],
       "answers_in": "## 7."
     },
     {
       "id": "agent.7",
       "title": "Data and AI governance",
-      "title_zh": "数据与 AI 治理",
       "required": true,
       "expects": [
         "What data the city generates and who may read it",
@@ -133,18 +88,11 @@
         "Who controls the compute asset, and what happens if that operator leaves",
         "At least one named failure mode and its mitigation"
       ],
-      "expects_zh": [
-        "城市产生哪些数据、谁可以读",
-        "哪些内容公众可以审计、通过什么机制、多久一次、谁能核查",
-        "算力资产归谁控制、运营方退出时会怎样",
-        "至少一个具体的失效模式及其应对"
-      ],
       "answers_in": "## 8."
     },
     {
       "id": "agent.8",
       "title": "Phasing in three steps",
-      "title_zh": "三期分期",
       "required": true,
       "expects": [
         "Three phases defined by the scheme, drawn on the site",
@@ -152,13 +100,6 @@
         "Observable triggers for phases two and three - not dates",
         "Decisions in phase one that cannot be changed later (at least three), and why that is acceptable",
         "The long-term size the scheme proposes, and how many settlements"
-      ],
-      "expects_zh": [
-        "由方案定义的三期，画在场地上",
-        "一期自己成立：无论放在哪里，都要有自己的生产、物流与服务",
-        "二期、三期的可观测触发条件——不是时间表",
-        "一期中此后无法更改的决定（至少三条），以及为什么可以接受",
-        "方案提出的远期规模与聚落数量"
       ],
       "answers_in": "## 9."
     }

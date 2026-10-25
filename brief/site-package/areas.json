@@ -1,6 +1,5 @@
 {
  "note_en": "Every area quoted anywhere in this repository comes from this file. Geodesic areas on WGS 84 for polygons; raster counts (60 m cells) for terrain classes.",
- "note_zh": "仓库里引用的所有面积都以本文件为准。多边形面积为 WGS 84 椭球面积；地形分类为 60 m 栅格计数。",
  "figures": [
   {
    "key": "site",
