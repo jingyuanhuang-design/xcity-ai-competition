@@ -731,6 +731,23 @@ html{scroll-padding-top:calc(var(--pbar-h) + var(--gnav-h) + var(--nav-h) + var(
 .pt-status{border-left:2px solid var(--gold);padding:var(--sp-3) var(--sp-5);margin-top:var(--sp-5);background:rgba(201,169,97,.06)}
 .pt-status p{font-size:15px;color:#e4ddd0;line-height:1.8;margin:0 0 6px}.pt-status p:last-child{margin:0}
 .pt-mail{font-family:var(--mono);font-size:var(--fs-sm);color:var(--ink)}
+.eoi{border:1px solid var(--line);background:#121212;color:var(--ink);padding:0;max-width:760px;width:calc(100% - 32px);max-height:calc(100vh - 32px)}
+.eoi::backdrop{background:rgba(0,0,0,.72)}
+.eoi-in{padding:var(--sp-5) var(--sp-6) var(--sp-5)}
+.eoi-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--sp-4)}.eoi-top h3{margin:0}
+.eoi-x{background:none;border:0;color:var(--muted);font-size:28px;line-height:1;cursor:pointer}
+.eoi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}
+.eoi-f{display:flex;flex-direction:column;gap:6px;font-size:14px;color:#d9d2c5}.eoi-f.full,.eoi-c.full{grid-column:1/-1}
+.eoi-f i,.eoi-c i{color:var(--gold);font-style:normal}
+.eoi-f input,.eoi-f textarea{background:#0b0b0b;border:1px solid var(--line);color:var(--ink);padding:9px 10px;font:inherit;font-size:15px}
+.eoi-f input:focus,.eoi-f textarea:focus{outline:1px solid var(--gold);border-color:var(--gold)}
+.eoi-row{display:flex;flex-wrap:wrap;gap:8px 18px}
+.eoi-c{font-size:14.5px;color:#d9d2c5;display:flex;align-items:center;gap:6px}
+.eoi-err{color:#e0a36b;font-size:14px;margin-top:var(--sp-3)}.eoi-ok{align-self:center;color:var(--gold);font-size:14px}
+.eoi-note{border-left:2px solid var(--gold);padding:var(--sp-3) var(--sp-4);background:rgba(201,169,97,.06);margin-top:var(--sp-4)}
+.eoi-note p{font-size:14px;color:#cfc8bb;line-height:1.8;margin:0 0 6px}.eoi-note p:last-child{margin:0}
+button.btn-gold,button.btn-ghost{cursor:pointer;font:inherit}
+@media (max-width:640px){.eoi-grid{grid-template-columns:1fr}.eoi-in{padding:var(--sp-4)}}
 
 .tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--sp-5)}
 .track{display:flex;flex-direction:column;border:1px solid var(--line-soft);border-top:2px solid var(--gold);color:inherit;text-decoration:none;transition:border-color .2s}
