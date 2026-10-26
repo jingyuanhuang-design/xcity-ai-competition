@@ -20,7 +20,7 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "package_sha256": "c7fdf3e3c42aa61b1b28e68fe4ef7bffc21a0a7d57b1a1d9d730e8467ba7ce4e",
+    "package_sha256": "8b7ebb49cca5d99e758fd8e1fa3cf9617ead0fd1b12c7a490114546f35027ee8",
     "reviewed_package_sha256": null,
     "published": false,
     "featured": false,
@@ -42,39 +42,39 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3150989
+        3151227
       ],
       [
         "drawings/a3-booklet.pdf",
-        9311722
+        9311829
       ],
       [
         "figures/fig-01-structure.png",
-        1244215
+        1244631
       ],
       [
         "figures/fig-02-master-plan.png",
-        421681
+        421082
       ],
       [
         "figures/fig-03-land-use-density.png",
-        346542
+        345953
       ],
       [
         "figures/fig-04-movement.png",
-        386297
+        385575
       ],
       [
         "figures/fig-05-open-space-water.png",
-        286961
+        286520
       ],
       [
         "figures/fig-06-phasing.png",
-        890428
+        889827
       ],
       [
         "figures/fig-07-metrics.png",
-        270639
+        270045
       ],
       [
         "figures/node-N01-aerial.png",
@@ -210,7 +210,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "proposal.md",
-        27684
+        27697
       ],
       [
         "renders/N01-aerial.png",
@@ -274,7 +274,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "report/proposal.html",
-        35385
+        35404
       ],
       [
         "sources.json",
